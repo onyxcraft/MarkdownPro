@@ -15,7 +15,8 @@ struct ContentView: View {
     @State private var showTableEditor = false
 
     var body: some View {
-        HSplitView {
+        ScrollView {
+            HSplitView {
             if appState.showSidebar {
                 FileBrowserView { url in
                     loadFile(url)
@@ -80,6 +81,8 @@ struct ContentView: View {
                 }
                 .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
             }
+            }
+            .frame(minWidth: 600, minHeight: 600)
         }
         .toolbar {
             ToolbarItemGroup {
