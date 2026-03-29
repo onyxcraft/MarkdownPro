@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class MarkdownRenderer {
     static func renderHTML(_ markdown: String, theme: EditorTheme = .light) -> String {
