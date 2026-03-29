@@ -190,8 +190,7 @@ struct MarkdownEditorView: NSViewRepresentable {
         let text = textView.string as NSString
         let selectedRange = textView.selectedRange()
 
-        var paragraphRange = NSRange()
-        text.getParagraphStart(nil, end: nil, contentsEnd: nil, for: selectedRange, paragraphRange: &paragraphRange)
+        let paragraphRange = text.paragraphRange(for: selectedRange)
 
         let storage = textView.textStorage!
         storage.beginEditing()
