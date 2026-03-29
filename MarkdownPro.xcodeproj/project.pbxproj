@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		A0000001 /* MarkdownPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2000001 /* MarkdownProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownProApp.swift; sourceTree = "<group>"; };
+		A2000001 /* MarkdownProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MarkdownProApp.swift; sourceTree = "<group>"; };
 		A2000002 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
 		A2000003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A2000004 /* OutlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineItem.swift; sourceTree = "<group>"; };
