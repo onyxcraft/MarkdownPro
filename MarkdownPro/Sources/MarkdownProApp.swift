@@ -13,7 +13,7 @@ struct MarkdownProApp: App {
     @StateObject private var appState = AppState()
 
     var body: some Scene {
-        DocumentGroup(newDocument: { MarkdownDocument() }) { file in
+        DocumentGroup(newDocument: MarkdownDocument()) { file in
             ContentView(document: file.$document)
                 .environmentObject(appState)
         }

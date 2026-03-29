@@ -90,12 +90,13 @@ class EditorViewModel: ObservableObject {
                 }
             }
         } else {
-            let options: String.CompareOptions = caseSensitive ? [] : .caseInsensitive
-            if let range = searchString.range(
+            let options: NSString.CompareOptions = caseSensitive ? [] : .caseInsensitive
+            let range = searchString.range(
                 of: findText,
                 options: options,
                 range: searchRange
-            ) {
+            )
+            if range.location != NSNotFound {
                 selectedRange = range
             }
         }
